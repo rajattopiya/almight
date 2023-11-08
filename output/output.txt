@@ -1,0 +1,79 @@
+aum@aum71:/usr/share/nginx$ chmod 777 html
+chmod: changing permissions of 'html': Operation not permitted
+aum@aum71:/usr/share/nginx$ ls
+html
+aum@aum71:/usr/share/nginx$ sudo chmod 777 html
+[sudo] password for aum: 
+aum@aum71:/usr/share/nginx$ sudo chmod -R 777 html
+aum@aum71:/usr/share/nginx$ cd html
+aum@aum71:/usr/share/nginx/html$ mkdir project1
+aum@aum71:/usr/share/nginx/html$ ls
+50x.html  index.html  project1
+aum@aum71:/usr/share/nginx/html$ cd project1/
+aum@aum71:/usr/share/nginx/html/project1$ index.html
+index.html: command not found
+aum@aum71:/usr/share/nginx/html/project1$ file index.html
+index.html: cannot open `index.html' (No such file or directory)
+aum@aum71:/usr/share/nginx/html/project1$ touch index.html
+aum@aum71:/usr/share/nginx/html/project1$ cat index.html 
+aum@aum71:/usr/share/nginx/html/project1$ index.html
+index.html: command not found
+aum@aum71:/usr/share/nginx/html/project1$ file index.html
+index.html: empty
+aum@aum71:/usr/share/nginx/html/project1$ >index.html
+aum@aum71:/usr/share/nginx/html/project1$ > index.html 
+aum@aum71:/usr/share/nginx/html/project1$ cat > index.html 
+Hello Writing From CMD Command And Check 
+^C
+aum@aum71:/usr/share/nginx/html/project1$ ls
+index.html
+aum@aum71:/usr/share/nginx/html/project1$ index.html
+index.html: command not found
+aum@aum71:/usr/share/nginx/html/project1$ ^C
+aum@aum71:/usr/share/nginx/html/project1$ echo index.html 
+index.html
+aum@aum71:/usr/share/nginx/html/project1$ cat index.html 
+Hello Writing From CMD Command And Check 
+aum@aum71:/usr/share/nginx/html/project1$ neno index.html 
+Command 'neno' not found, did you mean:
+  command 'nano' from snap nano (7.2+pkg-4057)
+  command 'nino' from snap nino (1.3.1)
+  command 'deno' from snap deno (v1.37.2)
+  command 'nemo' from deb nemo (5.2.4-1)
+  command 'nano' from deb nano (6.2-1)
+  command 'reno' from deb python3-reno (2.11.2-2build2)
+  command 'neko' from deb neko (2.3.0-1build3)
+See 'snap info <snapname>' for additional versions.
+aum@aum71:/usr/share/nginx/html/project1$ vim index.html 
+Command 'vim' not found, but can be installed with:
+sudo apt install vim         # version 2:8.2.3995-1ubuntu2.13, or
+sudo apt install vim-tiny    # version 2:8.2.3995-1ubuntu2.13
+sudo apt install vim-athena  # version 2:8.2.3995-1ubuntu2.13
+sudo apt install vim-gtk3    # version 2:8.2.3995-1ubuntu2.13
+sudo apt install vim-nox     # version 2:8.2.3995-1ubuntu2.13
+sudo apt install neovim      # version 0.6.1-3
+aum@aum71:/usr/share/nginx/html/project1$ cat > index.html 
+Hello again writing ^C
+aum@aum71:/usr/share/nginx/html/project1$ cat index.html 
+aum@aum71:/usr/share/nginx/html/project1$ cat index.html
+aum@aum71:/usr/share/nginx/html/project1$ cat > index.html
+Hello Its Again Writing Somthing 
+^C
+aum@aum71:/usr/share/nginx/html/project1$ cat index.html
+Hello Its Again Writing Somthing 
+aum@aum71:/usr/share/nginx/html/project1$ cat > index.html
+again and again writing for somthing
+^C
+aum@aum71:/usr/share/nginx/html/project1$ cat index.html 
+again and again writing for somthing
+aum@aum71:/usr/share/nginx/html/project1$ cat >> index.html 
+again 
+again  
+again its happen 
+^C
+aum@aum71:/usr/share/nginx/html/project1$ cat index.html 
+again and again writing for somthing
+again 
+again 
+again its happen 
+aum@aum71:/usr/share/nginx/html/project1$ 

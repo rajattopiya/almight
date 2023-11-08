@@ -1,0 +1,51 @@
+
+Token For Git :- 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
+
+For Configration 
+
+git config --global user.name "rajattopiya"
+git config --global user.email "rajat.topiya@gmail.com"
+git config -l
+
+
+echo "# aspl" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/rajattopiya/first.git
+git push -u origin main
+
+git branch
+
+Remove from Origin :- git remote remove origin
+For Check Origin :- git remote -v
+
+Update Exiting URL :- remote set-url origin [new-url]
+
+
+
+Add New Branch 
+git branch <new-branch>
+git push -u origin rajat
+
+
+branch create in local
+git branch (List all branch) 
+git branch branchname
+
+branch swich 
+git checkout
+
+
+For add Folder 
+
+git config -1
+git add .
+git commite -m "Commet"
+git branch (List out branch )
+Git branch <New Branch name> (Create New Branch)
+git checkout <Branch Name> (Swich Branch)
+
+git remote add origin https://github.com/rajattopiya/first.git
+git push -u origin main

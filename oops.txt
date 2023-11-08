@@ -1,0 +1,17 @@
+
+Ref :- https://www.w3schools.com/php/php_oop_what_is.asp
+
+
+Class/Object
+Constructor
+Destructor
+Access Modifiers
+Inheritance
+Class Constants
+Abstract Classes and Methods
+Interfaces
+Traits
+Static Methods
+Static Properties
+Namespaces
+Iterable

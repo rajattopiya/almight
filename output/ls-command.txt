@@ -1,0 +1,90 @@
+aum@aum71:/usr/share/nginx/html$ ls
+50x.html  index.html  project1
+aum@aum71:/usr/share/nginx/html$ ls -1
+50x.html
+index.html
+project1
+aum@aum71:/usr/share/nginx/html$ ls -l
+total 12
+-rwxrwxrwx 1 root root  497 Apr 11  2023 50x.html
+-rwxrwxrwx 1 root root  633 Nov  7 17:30 index.html
+drwxrwxr-x 2 aum  aum  4096 Nov  7 17:38 project1
+aum@aum71:/usr/share/nginx/html$ ls -al
+total 20
+drwxrwxrwx 3 root root 4096 Nov  7 17:31 .
+drwxrwxrwx 3 root root 4096 Nov  6 15:08 ..
+-rwxrwxrwx 1 root root  497 Apr 11  2023 50x.html
+-rwxrwxrwx 1 root root  633 Nov  7 17:30 index.html
+drwxrwxr-x 2 aum  aum  4096 Nov  7 17:38 project1
+aum@aum71:/usr/share/nginx/html$ LS
+LS: command not found
+aum@aum71:/usr/share/nginx/html$ ls -LS
+project1  index.html  50x.html
+aum@aum71:/usr/share/nginx/html$ ls -LS
+project1  index.html  50x.html
+aum@aum71:/usr/share/nginx/html$ ls
+50x.html  index.html  project1
+aum@aum71:/usr/share/nginx/html$ ls -LS
+project1  index.html  50x.html
+aum@aum71:/usr/share/nginx/html$ ls -l
+total 12
+-rwxrwxrwx 1 root root  497 Apr 11  2023 50x.html
+-rwxrwxrwx 1 root root  633 Nov  7 17:30 index.html
+drwxrwxr-x 2 aum  aum  4096 Nov  7 17:38 project1
+aum@aum71:/usr/share/nginx/html$ ls -a
+.  ..  50x.html  index.html  project1
+aum@aum71:/usr/share/nginx/html$ ls -t
+project1  index.html  50x.html
+aum@aum71:/usr/share/nginx/html$ ls -r
+project1  index.html  50x.html
+aum@aum71:/usr/share/nginx/html$ ls -S
+project1  index.html  50x.html
+aum@aum71:/usr/share/nginx/html$ ls -R
+.:
+50x.html  index.html  project1
+
+./project1:
+index.html
+aum@aum71:/usr/share/nginx/html$ ls -t
+project1  index.html  50x.html
+aum@aum71:/usr/share/nginx/html$ ls -g
+total 12
+-rwxrwxrwx 1 root  497 Apr 11  2023 50x.html
+-rwxrwxrwx 1 root  633 Nov  7 17:30 index.html
+drwxrwxr-x 2 aum  4096 Nov  7 17:38 project1
+aum@aum71:/usr/share/nginx/html$ ls -h
+50x.html  index.html  project1
+aum@aum71:/usr/share/nginx/html$ ls -d
+.
+aum@aum71:/usr/share/nginx/html$ ls -1
+50x.html
+index.html
+project1
+aum@aum71:/usr/share/nginx/html$ ls -l
+total 12
+-rwxrwxrwx 1 root root  497 Apr 11  2023 50x.html
+-rwxrwxrwx 1 root root  633 Nov  7 17:30 index.html
+drwxrwxr-x 2 aum  aum  4096 Nov  7 17:38 project1
+aum@aum71:/usr/share/nginx/html$ ls -s
+total 12
+4 50x.html  4 index.html  4 project1
+aum@aum71:/usr/share/nginx/html$ ls-a
+ls-a: command not found
+aum@aum71:/usr/share/nginx/html$ ls -a
+.  ..  50x.html  index.html  project1
+aum@aum71:/usr/share/nginx/html$ ls -t
+project1  index.html  50x.html
+aum@aum71:/usr/share/nginx/html$ ls -r
+project1  index.html  50x.html
+aum@aum71:/usr/share/nginx/html$ ls -i
+6563250 50x.html  6563251 index.html  6557505 project1
+aum@aum71:/usr/share/nginx/html$ ls -g
+total 12
+-rwxrwxrwx 1 root  497 Apr 11  2023 50x.html
+-rwxrwxrwx 1 root  633 Nov  7 17:30 index.html
+drwxrwxr-x 2 aum  4096 Nov  7 17:38 project1
+aum@aum71:/usr/share/nginx/html$ ls -h
+50x.html  index.html  project1
+aum@aum71:/usr/share/nginx/html$ ls -d
+.
+aum@aum71:/usr/share/nginx/html$ 

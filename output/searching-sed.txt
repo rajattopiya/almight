@@ -1,0 +1,210 @@
+aum@aum71:/usr/share/nginx/html/project3$ wget index.html
+--2023-11-08 12:29:51--  http://index.html/
+Resolving index.html (index.html)... failed: Name or service not known.
+wget: unable to resolve host address ‘index.html’
+aum@aum71:/usr/share/nginx/html/project3$ ls
+firstzip.tar.gz  inde_mainx.html  index.html  project1
+aum@aum71:/usr/share/nginx/html/project3$ wget localhost/project1
+--2023-11-08 12:30:47--  http://localhost/project1
+Resolving localhost (localhost)... 127.0.0.1
+Connecting to localhost (localhost)|127.0.0.1|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: http://localhost/project1/ [following]
+--2023-11-08 12:30:47--  http://localhost/project1/
+Reusing existing connection to localhost:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 69 [text/html]
+project1: Is a directory
+
+Cannot write to ‘project1’ (Is a directory).
+aum@aum71:/usr/share/nginx/html/project3$ cd ..
+aum@aum71:/usr/share/nginx/html$ mkdir project2
+aum@aum71:/usr/share/nginx/html$ cd project2
+aum@aum71:/usr/share/nginx/html/project2$ wget localhost/project1
+--2023-11-08 12:31:29--  http://localhost/project1
+Resolving localhost (localhost)... 127.0.0.1
+Connecting to localhost (localhost)|127.0.0.1|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: http://localhost/project1/ [following]
+--2023-11-08 12:31:29--  http://localhost/project1/
+Reusing existing connection to localhost:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 69 [text/html]
+Saving to: ‘project1’
+
+project1                  100%[====================================>]      69  --.-KB/s    in 0s      
+
+2023-11-08 12:31:29 (3.90 MB/s) - ‘project1’ saved [69/69]
+
+aum@aum71:/usr/share/nginx/html/project2$ ping www.google.com
+PING www.google.com(bom07s10-in-x04.1e100.net (2404:6800:4009:801::2004)) 56 data bytes
+64 bytes from bom12s03-in-x04.1e100.net (2404:6800:4009:801::2004): icmp_seq=1 ttl=59 time=31.4 ms
+64 bytes from bom12s03-in-x04.1e100.net (2404:6800:4009:801::2004): icmp_seq=2 ttl=59 time=24.1 ms
+64 bytes from bom07s10-in-x04.1e100.net (2404:6800:4009:801::2004): icmp_seq=3 ttl=59 time=23.5 ms
+64 bytes from bom12s03-in-x04.1e100.net (2404:6800:4009:801::2004): icmp_seq=4 ttl=59 time=29.2 ms
+64 bytes from bom07s10-in-x04.1e100.net (2404:6800:4009:801::2004): icmp_seq=5 ttl=59 time=51.0 ms
+64 bytes from bom12s03-in-x04.1e100.net (2404:6800:4009:801::2004): icmp_seq=6 ttl=59 time=29.8 ms
+64 bytes from bom12s03-in-x04.1e100.net (2404:6800:4009:801::2004): icmp_seq=7 ttl=59 time=38.1 ms
+64 bytes from bom07s10-in-x04.1e100.net (2404:6800:4009:801::2004): icmp_seq=8 ttl=59 time=53.9 ms
+64 bytes from bom12s03-in-x04.1e100.net (2404:6800:4009:801::2004): icmp_seq=9 ttl=59 time=37.3 ms
+64 bytes from bom12s03-in-x04.1e100.net (2404:6800:4009:801::2004): icmp_seq=10 ttl=59 time=24.0 ms
+64 bytes from bom07s10-in-x04.1e100.net (2404:6800:4009:801::2004): icmp_seq=11 ttl=59 time=38.2 ms
+64 bytes from bom12s03-in-x04.1e100.net (2404:6800:4009:801::2004): icmp_seq=12 ttl=59 time=34.5 ms
+^Z
+[1]+  Stopped                 ping www.google.com
+aum@aum71:/usr/share/nginx/html/project2$ dig www.google.com
+
+; <<>> DiG 9.18.12-0ubuntu0.22.04.3-Ubuntu <<>> www.google.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 12536
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;www.google.com.                        IN      A
+
+;; ANSWER SECTION:
+www.google.com.         174     IN      A       172.217.174.228
+
+;; Query time: 0 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+;; WHEN: Wed Nov 08 12:34:00 IST 2023
+;; MSG SIZE  rcvd: 59
+
+aum@aum71:/usr/share/nginx/html/project2$ sudo netstat -tulpn
+[sudo] password for aum: 
+sudo: netstat: command not found
+aum@aum71:/usr/share/nginx/html/project2$ sudo retstat -tulpn
+sudo: retstat: command not found
+aum@aum71:/usr/share/nginx/html/project2$ netstat -a
+Command 'netstat' not found, but can be installed with:
+sudo apt install net-tools
+aum@aum71:/usr/share/nginx/html/project2$ cd 
+aum@aum71:~$ netstat -a
+Command 'netstat' not found, but can be installed with:
+sudo apt install net-tools
+aum@aum71:~$ sudo netstat -a
+sudo: netstat: command not found
+aum@aum71:~$ sudo netstat
+sudo: netstat: command not found
+aum@aum71:~$ cd /usr/share/naginx/html
+bash: cd: /usr/share/naginx/html: No such file or directory
+aum@aum71:~$ cd usr
+bash: cd: usr: No such file or directory
+aum@aum71:~$ ls
+Desktop    Downloads  md     myproject        Pictures  snap       Videos
+Documents  first-git  Music  nano.97859.save  Public    Templates  web
+aum@aum71:~$ cd ..
+aum@aum71:/home$ ls
+aum
+aum@aum71:/home$ cd ..
+aum@aum71:/$ ls
+bin   cdrom  etc   lib    lib64   lost+found  mnt  proc  run   snap  swapfile  tmp  var
+boot  dev    home  lib32  libx32  media       opt  root  sbin  srv   sys       usr
+aum@aum71:/$ cd /usr/share/naginx/html
+bash: cd: /usr/share/naginx/html: No such file or directory
+aum@aum71:/$ cd /usr
+aum@aum71:/usr$ cd share/nginx
+aum@aum71:/usr/share/nginx$ cd html/
+aum@aum71:/usr/share/nginx/html$ ls
+50x.html  firstzip.tar.gz  index.html  project1  project2  project3
+aum@aum71:/usr/share/nginx/html$ cd  project2
+aum@aum71:/usr/share/nginx/html/project2$ cd ..
+aum@aum71:/usr/share/nginx/html$ rm -f project2
+rm: cannot remove 'project2': Is a directory
+aum@aum71:/usr/share/nginx/html$ grep "again" index*
+again and again writing for somthing
+again 
+again 
+again its happen 
+aum@aum71:/usr/share/nginx/html$ grep "again" 
+^Z
+[2]+  Stopped                 grep --color=auto "again"
+aum@aum71:/usr/share/nginx/html$ grep "again" project*
+grep: project1: Is a directory
+grep: project2: Is a directory
+grep: project3: Is a directory
+aum@aum71:/usr/share/nginx/html$ grep "again" inde*
+again and again writing for somthing
+again 
+again 
+again its happen 
+aum@aum71:/usr/share/nginx/html$ grep -n  "again" inde*
+1:again and again writing for somthing
+2:again 
+3:again 
+4:again its happen 
+aum@aum71:/usr/share/nginx/html$ ^C
+aum@aum71:/usr/share/nginx/html$ grep -r  "again" inde*
+again and again writing for somthing
+again 
+again 
+again its happen 
+aum@aum71:/usr/share/nginx/html$ grep -r  "again" ../inde*
+grep: ../inde*: No such file or directory
+aum@aum71:/usr/share/nginx/html$ grep -r  "again" /../inde*
+grep: /../inde*: No such file or directory
+aum@aum71:/usr/share/nginx/html$ sed -n ''
+^Z
+[3]+  Stopped                 sed -n ''
+aum@aum71:/usr/share/nginx/html$ sed -n '3'p index.html 
+again 
+aum@aum71:/usr/share/nginx/html$ sed -n '4' index.html 
+sed: -e expression #1, char 1: missing command
+aum@aum71:/usr/share/nginx/html$ sed -n '1'p index.html 
+again and again writing for somthing
+aum@aum71:/usr/share/nginx/html$ sed -n '1~3'p index.html 
+again and again writing for somthing
+again its happen 
+aum@aum71:/usr/share/nginx/html$ sed -n 'Strong,+2p' index.html 
+sed: -e expression #1, char 1: unknown command: `S'
+aum@aum71:/usr/share/nginx/html$ sed -n '/Strong/,+2p' index.html 
+aum@aum71:/usr/share/nginx/html$ sed -n '/again/,+2p' index.html 
+again and again writing for somthing
+again 
+again 
+again its happen 
+aum@aum71:/usr/share/nginx/html$ sed -n '/again/,1p' index.html 
+again and again writing for somthing
+again 
+again 
+again its happen 
+aum@aum71:/usr/share/nginx/html$ sed -n '/again/,+2p' index.html 
+again and again writing for somthing
+again 
+again 
+again its happen 
+aum@aum71:/usr/share/nginx/html$ sed 's/Again/Again-new/' index.html 
+again and again writing for somthing
+again 
+again 
+again its happen 
+aum@aum71:/usr/share/nginx/html$ sed 's/again/Again-new/' index.html 
+Again-new and again writing for somthing
+Again-new 
+Again-new 
+Again-new its happen 
+aum@aum71:/usr/share/nginx/html$ sed 's/*again/Again-new/' index.html 
+again and again writing for somthing
+again 
+again 
+again its happen 
+aum@aum71:/usr/share/nginx/html$ sed 's/again/Again-new/' index.html 
+Again-new and again writing for somthing
+Again-new 
+Again-new 
+Again-new its happen 
+aum@aum71:/usr/share/nginx/html$ sed 's/*again/Again-new/' index.html 
+again and again writing for somthing
+again 
+again 
+again its happen 
+aum@aum71:/usr/share/nginx/html$ sed '3 s/again/Again-new/' index.html 
+again and again writing for somthing
+again 
+Again-new 
+again its happen 
+aum@aum71:/usr/share/nginx/html$ ^C
+aum@aum71:/usr/share/nginx/html$ 

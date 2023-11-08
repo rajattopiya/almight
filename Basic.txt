@@ -1,0 +1,20 @@
+PC Password :- aumaum
+
+
+http://entry.home.aum/user/userMain.php#
+
+
+
+rajat@aum203.aum.com
+
+
+username  :- rajat
+Password  :- rajat
+
+
+current page :- 280
+
+
+localhost location
+
+/usr/share/nginx/

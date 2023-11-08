@@ -1,0 +1,132 @@
+aum@aum71:/usr/share/nginx/html$ echo | awk -v home=$HOME '{print "My home is",home}
+> Home2
+> Home3
+> ^C
+aum@aum71:/usr/share/nginx/html$ echo | awk -v home=$HOME '{print "My home is",home}
+Home2
+Home3
+> 
+> 
+> s
+> ^C
+aum@aum71:/usr/share/nginx/html$ echo | awk -v home=$HOME '{print "My home is",home}
+Home2
+Home3
+
+
+s^C
+aum@aum71:/usr/share/nginx/html$ awk '{print $1;}' index.html 
+again
+again
+again
+again
+aum@aum71:/usr/share/nginx/html$ awk '{print $4;}' index.html 
+writing
+
+
+
+aum@aum71:/usr/share/nginx/html$ cat index.html 
+again and again writing for somthing
+again 
+again 
+again its happen 
+aum@aum71:/usr/share/nginx/html$ awk '{print $3;}' index.html 
+again
+
+
+happen
+aum@aum71:/usr/share/nginx/html$ echo | awk -v home=$HOME '{print "My home is",home}'echo | awk -v home=$HOME '{print "My home is",home}
+> First Home
+> econd Home
+> ^C
+aum@aum71:/usr/share/nginx/html$ echo | awk -v home=$HOME '{print "My home is",home}'echo | awk -v home=$HOME '{print "My home is",home}
+First Home
+econd Home
+> Third Home
+> Fourth Home
+> ^C
+aum@aum71:/usr/share/nginx/html$ awk 'BEGIN {print "Name\tTotal\tSub1\tSub2\tSub3";} {print $1,"\t",$2,"\t",$3,"\t",$4,"\t",$NF;} END{print "Report
+Generated\n--------------";}'
+awk: line 1: runaway string constant "Report ...
+aum@aum71:/usr/share/nginx/html$ awk 'BEGIN {print "Name\tTotal\tSub1\tSub2\tSub3";} {print $1,"\t",$2,"\t",$3,"\t",$4,"\t",$NF;} END{print "Report Generated\n--------------";}'
+Name    Total   Sub1    Sub2    Sub3
+Rajat 100       100     50      53
+Rajat    100     100     50      53
+rajat2  150     60      74      52
+rajat2   150     60      74      52
+^C
+aum@aum71:/usr/share/nginx/html$ awk '{ region[$1]++; } END{ for (var in region) print var, "access", region[var],"times" }' regions.txt
+awk: cannot open regions.txt (No such file or directory)
+aum@aum71:/usr/share/nginx/html$ cat regions.txt
+cat: regions.txt: No such file or directory
+aum@aum71:/usr/share/nginx/html$ cat >  regions.txt
+^Z
+[1]+  Stopped                 cat > regions.txt
+aum@aum71:/usr/share/nginx/html$ ls
+50x.html  firstzip.tar.gz  index.html  project1  project2  project3  regions.txt
+aum@aum71:/usr/share/nginx/html$ awk '{ region[$1]++; } END{ for (var in region) print var, "access", region[var],"times" }' regions.txt
+aum@aum71:/usr/share/nginx/html$ cat  regions.txt
+aum@aum71:/usr/share/nginx/html$ awk '{ region[$1]++; } END{ for (var in region) print var, "access", region[var],"times" }' regions.txt
+aum@aum71:/usr/share/nginx/html$ cd project3
+aum@aum71:/usr/share/nginx/html/project3$ cat >  regions.txt
+Check From Command 
+^C
+aum@aum71:/usr/share/nginx/html/project3$ awk '{ region[$1]++; } END{ for (var in region) print var, "access", region[var],"times" }' regions.txt
+Check access 1 times
+aum@aum71:/usr/share/nginx/html/project3$ awk '{ region[$1]++; } END{ for (var in region) print var, "access", region[var],"times" }' regions.txt
+Check access 1 times
+aum@aum71:/usr/share/nginx/html/project3$ awk '{ region[$1]++; } END{ for (var in region) print var, "access", region[var],"times" }' regions.txt
+Asia access 1 times
+Europe access 1 times
+aum@aum71:/usr/share/nginx/html/project3$ awk '{ region[$1]++; } END{ for (var in region) print var, "access", region[var],"times" }' regions.txt
+Asia access 1 times
+Europe access 1 times
+aum@aum71:/usr/share/nginx/html/project3$ awk '{ region[$1]++; } END{ for (var in region) print var, "access", region[var],"times" }' regions.txt
+Asia access 1 times
+Europe access 1 times
+aum@aum71:/usr/share/nginx/html/project3$ awk '{ region[$1]++; } END{ for (var in region) print var, "access", region[var],"times" }' regions.txt
+Asia access 1 times
+Europe access 1 times
+aum@aum71:/usr/share/nginx/html/project3$ awk '{ region[$1]++; } regions.txt
+> 10
+> 20
+> 30
+> ^C
+aum@aum71:/usr/share/nginx/html/project3$ awk '{ region[$1]++; } END{ for (var in region) print var, "access", region[var],"times" }' regions.txt
+Asia access 1 times
+Europe access 1 times
+aum@aum71:/usr/share/nginx/html/project3$ awk '{ region[$1]++; } END{ for (var in region) print var, "access", region[var],"times" }' regions.txt
+access access 2 times
+aum@aum71:/usr/share/nginx/html/project3$ awk '{ region[$1]++; } END{ for (var in region) print var, "access", region[var],"times" }' regions.txt
+Asia access 1 times
+Europe access 1 times
+aum@aum71:/usr/share/nginx/html/project3$ awk '{ region[$1]++; } END{ for (var in region) print var, "access", region[var],"times" }' regions.txt
+Asia access 1 times
+Europe access 1 times
+aum@aum71:/usr/share/nginx/html/project3$ awk '{ region[$1]++; } END{ for (var in region) print var, "access", region[var],"times" }' regions.txt
+ access 3 times
+Asia access 1 times
+Europe access 1 times
+access access 6 times
+aum@aum71:/usr/share/nginx/html/project3$ awk '{ region[$1]++; } END{ for (var in region) print var, "access", region[var],"times" }' regions.txt
+Asia access 5 times
+Europe access 6 times
+aum@aum71:/usr/share/nginx/html/project3$ ^C
+aum@aum71:/usr/share/nginx/html/project3$ awk 'BEGIN {print "Name\tTotal\tSub1\tSub2\tSub3";} {print $1,"\t",$2,"\t",$3,"\t",$4,"\t",$NF;} END{print "Report Generated\n--------------";}' student-marks.txt
+Name    Total   Sub1    Sub2    Sub3
+awk: cannot open student-marks.txt (No such file or directory)
+aum@aum71:/usr/share/nginx/html/project3$ cat > student.txt
+^Z
+[2]+  Stopped                 cat > student.txt
+aum@aum71:/usr/share/nginx/html/project3$ awk 'BEGIN {print "Name\tTotal\tSub1\tSub2\tSub3";} {print $1,"\t",$2,"\t",$3,"\t",$4,"\t",$NF;} END{print "Report Generated\n--------------";}' student.txt
+Name    Total   Sub1    Sub2    Sub3
+Report Generated
+--------------
+aum@aum71:/usr/share/nginx/html/project3$ awk 'BEGIN {print "Name\tTotal\tSub1\tSub2\tSub3";} {print $1,"\t",$2,"\t",$3,"\t",$4,"\t",$NF;} END{print "Report Generated\n--------------";}' student.txt
+Name    Total   Sub1    Sub2    Sub3
+Rajat    100     50      60      40
+Rajat2   50      60      70      90
+Rajat3   50      68      87      95
+Report Generated
+--------------
+aum@aum71:/usr/share/nginx/html/project3$ 

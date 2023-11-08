@@ -1,0 +1,13 @@
+Regular expression
+
+Ref :- https://www.w3schools.com/php/php_ref_regex.asp
+
+
+preg_filter() [preg_filter('/[0-9]+/', '($0)', $input);]
+preg_grep() [preg_grep("/^p/i", $input);]
+preg_last_error()
+preg_match() [preg_match($pattern, $str);] ==> return Boolean 
+preg_match_all()
+preg_replace()
+preg_replace_callback()
+preg_split()
